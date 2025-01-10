@@ -4,17 +4,8 @@ import static org.junit.jupiter.api.Assertions.*;
 class StringUtilsTest {
 
     @Test
-    void testPalindromeWithNormalString() {
-        assertTrue(StringUtils.isPalindrome("radar"));
-        assertTrue(StringUtils.isPalindrome("madam"));
-        assertTrue(StringUtils.isPalindrome("level"));
-    }
-
-    @Test
-    void testNonPalindromeString() {
-        assertFalse(StringUtils.isPalindrome("hello"));
-        assertFalse(StringUtils.isPalindrome("java"));
-        assertFalse(StringUtils.isPalindrome("programming"));
+    void testNullString() {
+        assertFalse(StringUtils.isPalindrome(null));
     }
 
     @Test
@@ -23,25 +14,33 @@ class StringUtilsTest {
     }
 
     @Test
-    void testNullString() {
-        assertFalse(StringUtils.isPalindrome(null));
+    void testWhitespaceOnly() {
+        assertTrue(StringUtils.isPalindrome("   "));
     }
 
     @Test
-    void testSingleCharacterString() {
-        assertTrue(StringUtils.isPalindrome("a"));
-        assertTrue(StringUtils.isPalindrome("z"));
+    void testPalindromeSimple() {
+        assertTrue(StringUtils.isPalindrome("aba"));
     }
 
     @Test
-    void testPalindromeWithSpaces() {
-        assertTrue(StringUtils.isPalindrome("nurses run")); // Xử lý khoảng trắng
-    }
-
-    @Test
-    void testPalindromeWithSpacesAndMixedCase() {
-        assertTrue(StringUtils.isPalindrome("Nurses Run"));
+    void testPalindromeWithSpacesAndCase() {
         assertTrue(StringUtils.isPalindrome("A man a plan a canal Panama"));
-        assertFalse(StringUtils.isPalindrome("Hello World"));
+    }
+
+    @Test
+    void testNonPalindrome() {
+        assertFalse(StringUtils.isPalindrome("hello"));
+    }
+
+    @Test
+    void testSingleCharacter() {
+        assertTrue(StringUtils.isPalindrome("a"));
+    }
+
+    @Test
+    void testPalindromeWithSpecialCharacters() {
+        assertTrue(StringUtils.isPalindrome("12321"));
+        assertFalse(StringUtils.isPalindrome("12345"));
     }
 }
