@@ -67,3 +67,6 @@ Hàm kiểm tra Palindrome nằm trong lớp `StringUtils` và có các bước 
 
 ## Hình ảnh kết quả
 ![Screenshot (168)](https://github.com/user-attachments/assets/d4950b81-090c-4127-bbf1-a872ca022019)
+
+## Tài liệu tham khảo 
+https://chatgpt.com/c/67807545-1ebc-8000-9aab-1c02be6ab2a8
