@@ -65,8 +65,17 @@ Hàm kiểm tra Palindrome nằm trong lớp `StringUtils` và có các bước 
 | `"A@b@A"`                    | `true`     | Palindrome khi bỏ qua các ký tự đặc biệt.                                                                                                 |
 | `"A!bc@d"`                   | `false`    | Không phải Palindrome.        
 
+
 ## Hình ảnh kết quả
 ![Screenshot (168)](https://github.com/user-attachments/assets/d4950b81-090c-4127-bbf1-a872ca022019)
 
-## Tài liệu tham khảo 
-https://chatgpt.com/c/67807545-1ebc-8000-9aab-1c02be6ab2a8
+## Mức độ bao phủ **`Test Coverage`**
+- Class: 100% (1/1)
+- Method: 100% (1/1)
+- Line: 100% (10/10)
+- Branch: 100% (6/6)
+
+## Hình ảnh kết quả mức độ bao phủ
+![Screenshot (171)](https://github.com/user-attachments/assets/b30ce055-56e5-40e5-a7ab-67b66539ba6d)
+
+## Tài liệu tham khảo  https://chatgpt.com/c/67807545-1ebc-8000-9aab-1c02be6ab2a8
